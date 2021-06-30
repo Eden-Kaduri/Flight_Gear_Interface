@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="15.0.1" class="java.beans.XMLDecoder">
+ <object class="config.Properties" id="Properties0">
+  <void property="flightGearIP">
+   <string>127.0.0.1</string>
+  </void>
+  <void property="flightGearPort">
+   <int>5400</int>
+  </void>
+  <void property="normalFlightCsvPath">
+   <string>src/dataFiles/reg_flight.csv</string>
+  </void>
+  <void property="rate">
+   <float>100.0</float>
+  </void>
+  <void property="rowsIndex">
+   <void method="put">
+    <string>throttle</string>
+    <string>throttle</string>
+   </void>
+   <void method="put">
+    <string>altitude</string>
+    <string>altimeter_indicated-altitude-ft</string>
+   </void>
+   <void method="put">
+    <string>heading</string>
+    <string>indicated-heading-deg</string>
+   </void>
+   <void method="put">
+    <string>elevators</string>
+    <string>elevator</string>
+   </void>
+   <void method="put">
+    <string>rudder</string>
+    <string>rudder</string>
+   </void>
+   <void method="put">
+    <string>roll</string>
+    <string>attitude-indicator_indicated-roll-deg</string>
+   </void>
+   <void method="put">
+    <string>aileron</string>
+    <string>aileron</string>
+   </void>
+   <void method="put">
+    <string>pitch</string>
+    <string>attitude-indicator_internal-pitch-deg</string>
+   </void>
+   <void method="put">
+    <string>speed</string>
+    <string>airspeed-indicator_indicated-speed-kt</string>
+   </void>
+   <void method="put">
+    <string>yaw</string>
+    <string>side-slip-deg</string>
+   </void>
+  </void>
+ </object>
+</java>

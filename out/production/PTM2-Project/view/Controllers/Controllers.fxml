@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controllers.ControllersController">
+   <children>
+      <Button layoutX="133.0" layoutY="92.0" mnemonicParsing="false" onAction="#pressButtonPlay" prefHeight="33.0" prefWidth="70.0" text="Play ▶" />
+      <Button layoutX="218.0" layoutY="92.0" mnemonicParsing="false" onAction="#pressButtonPause" prefHeight="33.0" prefWidth="70.0" text="Pause ⏸" />
+      <Button layoutX="47.0" layoutY="92.0" mnemonicParsing="false" onAction="#pressButtonRewind" prefHeight="33.0" prefWidth="70.0" text="Back ⏪">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="380.0" layoutY="92.0" mnemonicParsing="false" onAction="#pressButtonForward" prefHeight="33.0" prefWidth="77.0" text="Forward ⏩" />
+      <Button layoutX="298.0" layoutY="92.0" mnemonicParsing="false" onAction="#pressButtonStop" prefHeight="33.0" prefWidth="70.0" text="Stop ⏹" />
+      <Label layoutX="14.0" layoutY="18.0" prefHeight="50.0" prefWidth="162.0" text="Speed rate">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Slider fx:id="progressBar" layoutX="9.0" layoutY="57.0" max="1.0" prefHeight="14.0" prefWidth="451.0" />
+      <TextField fx:id="playSpeedTF" layoutX="102.0" layoutY="30.0" onAction="#playSpeedWasChanged" prefHeight="25.0" prefWidth="31.0" text="1.0" />
+      <Label fx:id="currentTime" layoutX="429.0" layoutY="30.0" text="0:0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

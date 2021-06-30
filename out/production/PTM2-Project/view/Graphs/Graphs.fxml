@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8.0.281" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Graphs.GraphsController">
+   <children>
+      <LineChart fx:id="selectedAttributeGraph" animated="false" createSymbols="false" layoutX="150.0" layoutY="29.0" prefHeight="200.0" prefWidth="229.0">
+          <xAxis>
+              <NumberAxis side="BOTTOM" />
+          </xAxis>
+          <yAxis>
+              <NumberAxis side="LEFT" />
+          </yAxis>
+      </LineChart>
+       <LineChart fx:id="topCorrelativeAttributeGraph" animated="false" createSymbols="false" layoutX="150.0" layoutY="275.0" prefHeight="200.0" prefWidth="229.0">
+           <xAxis>
+               <NumberAxis side="BOTTOM" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis side="LEFT" />
+           </yAxis>
+       </LineChart>
+      <Label fx:id="topCorrelativeAttribute" layoutX="150.0" layoutY="250.0" prefHeight="35.0" prefWidth="524.0">
+       <font>
+           <Font size="20.0" />
+       </font>
+      </Label>
+   </children>
+</Pane>

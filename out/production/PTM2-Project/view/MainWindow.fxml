@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import view.Joystick.* ?>
+<?import view.ClocksPanel.* ?>
+<?import view.Graphs.* ?>
+<?import view.AttributesView.* ?>
+<?import view.Controllers.* ?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.281" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.MainWindowController">
+   <AppAttributes fx:id="attributes" layoutX="5.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0"/>
+   <AppJoystick fx:id="joystick" layoutX="495.0" layoutY="460.0" prefHeight="200.0" prefWidth="200.0"/>
+   <AppControllers fx:id="controllers" layoutX="10.0" layoutY="520.0" prefHeight="200.0" prefWidth="200.0"/>
+   <AppClocksPanel fx:id="panel" layoutX="750.0" layoutY="180.0" prefHeight="74.0" prefWidth="92.0"/>
+   <AppGraphs fx:id="graphs" layoutX="230.0" prefHeight="440" prefWidth="612" minHeight="440" maxHeight="440" minWidth="612" maxWidth="612"/>
+
+   <MenuButton mnemonicParsing="false" text="Load files" prefWidth="165.0">
+      <items>
+         <MenuItem mnemonicParsing="false" onAction="#loadXmlBtn" style="-fx-font-size: 16.0 pt;"
+                   text="Load XML Settings file"/>
+         <MenuItem mnemonicParsing="false" onAction="#loadCsvBtn" style="-fx-font-size: 16.0 pt;"
+                   text="Load CSV File"/>
+         <MenuItem mnemonicParsing="false" onAction="#loadAlgoBtn" style="-fx-font-size: 16.0 pt;"
+                   text="Load algorithm"/>
+      </items>
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </MenuButton>
+   <AnchorPane fx:id="detectAP" layoutX="300.0" layoutY="242.0" prefHeight="251.0" prefWidth="264.0" />
+</AnchorPane>
